@@ -428,6 +428,67 @@ body {
   line-height: 1.6;
 }
 
+.events-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+  padding: 20px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.events-section .text-content h2 {
+  color: #2aa9e0;
+  margin-left: 0px;
+  margin-top: 200px;
+}
+
+.text-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.text-content button {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid #2aa9e0;
+  color: #2aa9e0;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+.circle-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.circle-img.large {
+  width: 400px;
+  height: 400px;
+}
+
+.shift-down {
+  margin-top: 100px;
+}
+
 /* Simple fade-in animation */
 @keyframes fadeIn {
   from {
