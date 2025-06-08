@@ -260,7 +260,7 @@
   margin: 0 auto;
 }
 
-.overview .content .water-stories {
+/* .overview .content .water-stories {
   margin-top: 50px;
   padding: 10px 20px 10px 20px;
   width: 55%;
@@ -277,6 +277,95 @@
   font-weight: 700;
   line-height: 60px;
   color: #28a7df;
+} */
+
+.water-stories {
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  background-color: #f7f9fc;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.water-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 80px 50px;
+}
+
+.text-box {
+  flex: 1 1 50%;
+  padding-right: 20px;
+}
+
+.text-box h2 {
+  font-size: 100px;
+  color: #0080ff;
+  font-weight: 800;
+  margin-left: 0;
+}
+
+.text-box h3 {
+  font-size: 32px;
+  color: #0080ff;
+  margin-top: 10px;
+  padding-block: 10px;
+}
+
+.text-box p {
+  font-size: 25px;
+  margin-top: 15px;
+  color: #3a3a3a;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.drop-box {
+  flex: 1 1 50%;
+  text-align: center;
+  position: relative;
+}
+
+.drop-icon {
+  width: 25%;
+  height: auto;
+}
+
+.drop-text {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #0077cc;
+  font-weight: 500;
+}
+
+.collage-box {
+  margin-top: 30px;
+}
+
+.collage-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.explore-link {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.explore-link a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.explore-link span {
+  margin-left: 5px;
 }
 
 /* Reset and base styling */
