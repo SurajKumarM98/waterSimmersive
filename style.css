@@ -232,10 +232,11 @@
 }
 
 .overview .overview-content .content h6 {
-  font-size: 4vw;
-  line-height: 1.2;
+  font-size: 20px;
+  line-height: 21px;
   margin-bottom: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: Haffer SQ "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 300;
   color: #595959;
 }
@@ -251,13 +252,113 @@
 
 .overview .overview-content .img {
   width: 45%;
-  padding: 10px 40px;
+  padding-right: 20px;
 }
 
 .overview .overview-content .img img {
-  width: 100%;
+  width: 60%;
+}
+
+.pt-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.pt-img img {
+  width: 594px;
+  height: 638px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pt-content {
+  max-width: 100%;
+}
+
+.pt-content h6 {
+  font-size: 20px;
+  line-height: 21px;
+  margin-bottom: 10px;
+  font-family: Haffer SQ "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+  color: #595959;
+  margin-block-start: 50px;
+}
+
+.pt-content h3 {
+  /* Title #1 */
+
+  width: 979px;
+  height: 46px;
+
+  font-family: "Canela Deck Trial";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 100%;
+  /* identical to box height, or 46px */
+  color: #192023;
+}
+
+.pt-content p {
+  /* ASU’s grant team is working with rural and tribal communities to collect water stories and evaluate exhibits using a transactional UX design process: Empathize, Define, Ideate, Prototype, and Test. In the Empathize stage, rural and American Indian students will collect 15-20 stories per site, guided by Drs. Hale and Lauer, with participants receiving $50 Amazon gift cards. Stories will be stored using TheirStory software, managed by Labriola. Game development will draw from the We Are Water project and water perception surveys, including the Walton Water and Climate Survey (2020), the American Public Media Water Main Survey (2018), and White et al. (2019). The Define stage will involve coding data and creating visitor personas, with an interface designer and programmer hired for game development. The Ideate phase will focus on brainstorming game flow, scripts, and exhibit content for the museum exhibit in Page, AZ. */
+
+  width: 979px;
+  height: 416px;
+  padding-top: 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 145%;
+  /* or 32px */
+  text-align: justify;
+
+  color: #595959;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.pt-tabs {
+  display: flex;
+  background-color: #ececf0;
+  border-radius: 5px;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pt-tab-button {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pt-tab-button.pt-active {
+  background-color: #00aaff;
+  color: white;
+}
+
+.pt-tab-content {
+  display: none;
+}
+
+.pt-tab-content.pt-active {
   display: block;
-  margin: 0 auto;
 }
 
 /* .overview .content .water-stories {
@@ -539,9 +640,13 @@ body {
 }
 
 .text-content p {
-  font-size: 1rem;
+  font-family: Poppins;
+  font-size: 25px;
   line-height: 1.6;
   margin: 20px 0;
+  text-align: justify;
+  font-weight: 300;
+  padding-block-end: 50px;
 }
 
 .text-content button {
@@ -830,7 +935,6 @@ h2 {
   font-weight: 700;
   line-height: 60px;
   color: #28a7df;
-  margin-left: 20px;
 }
 
 * {
@@ -877,7 +981,7 @@ h2 {
   max-width: 1920px; /* adjust max width if required*/
   margin-inline: auto;
   box-sizing: border-box;
-  padding-inline: 24px; /* adjust padding here to your preference */
+  padding-inline: 20px; /* adjust padding here to your preference */
 }
 
 /* first overview section style overriden here */
@@ -890,13 +994,16 @@ h2 {
 .first-overview img {
   width: 80%;
   height: 80%;
-  padding: 16px 16px 0px 16px; /* top right bottom left */ /* inset padding on image */
+  padding: 8px; /* top right bottom left */ /* inset padding on image */
   object-fit: cover;
+  justify-self: end;
+  margin-top: 80px;
 }
 .first-overview .text-content {
   display: flex;
   flex-direction: column;
   gap: 48px; /**/
+  padding-left: 50px;
 }
 
 .games-experience h2 {
@@ -962,7 +1069,7 @@ h2 {
   .overview .overview-content .content,
   .overview .overview-content .img {
     width: 100%;
-    padding: 10px 20px;
+    padding-right: 10px 20px;
   }
 
   .overview .overview-content .content h2 {
