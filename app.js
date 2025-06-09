@@ -61,3 +61,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+const teamRows = document.querySelectorAll(".proj-team-row");
+const hoverImageContainer = document.getElementById("projTeamHoverImage");
+const hoverImage = document.getElementById("projTeamHoverImg");
+
+teamRows.forEach((row) => {
+  row.addEventListener("mouseenter", () => {
+    const imgSrc = row.getAttribute("data-img");
+    hoverImage.src = imgSrc;
+    row.classList.add("proj-team-underline");
+    hoverImageContainer.style.display = "block";
+  });
+
+  row.addEventListener("mouseleave", () => {
+    row.classList.remove("proj-team-underline");
+    hoverImageContainer.style.display = "none";
+  });
+});

@@ -773,6 +773,88 @@ body {
   margin-left: 10px;
 }
 
+.lr-container {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+}
+
+.lr-main-heading {
+  margin-block-start: 40px;
+  padding-left: 40px;
+}
+
+.lr-image-section {
+  flex: 0 0 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.lr-image-section img {
+  width: 959px;
+  height: 663px;
+  border-radius: 6px;
+}
+
+.lr-subheading {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.lr-text-section {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.lr-text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.lr-heading {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #151515;
+  font-weight: 600;
+  font-family: Literata;
+}
+
+.lr-paragraph {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 29.12px;
+  font-family: Poppins;
+  color: #595959;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.lr-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lr-link {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  color: #595959;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.lr-year {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  color: #595959;
+  margin-bottom: 5px;
+}
+
 .events {
   padding-top: 48px;
 }
@@ -829,17 +911,19 @@ body {
   color: #595959;
   font-family: Poppins;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 15px;
   display: flex;
   gap: 8px;
+  word-spacing: 2px;
 }
 .events .events-grid-item .events-grid-item_location {
   color: #595959;
   font-family: Poppins;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 15px;
   display: flex;
   gap: 8px;
+  word-spacing: 2px;
 }
 
 .timer-icon {
@@ -1092,6 +1176,76 @@ h2 {
     padding: 15px;
     text-align: center;
   }
+}
+
+.proj-team-container {
+  font-family: Georgia, serif;
+  margin: 40px;
+  background: #fff;
+}
+
+.proj-team-title {
+  font-size: 48px;
+  color: #1ca7e4;
+}
+
+.proj-team-row {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 25px 0; */
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s;
+  margin-block: 50px;
+}
+
+.proj-team-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.proj-team-heading .heading {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: -60px;
+}
+
+.proj-team-name,
+.proj-team-role,
+.proj-team-position {
+  font-weight: bold;
+  font-size: 20px;
+  flex: 1;
+}
+
+.proj-team-role {
+  flex: 2;
+}
+
+.proj-team-underline {
+  border-bottom: 1px solid #000;
+}
+
+.proj-team-hover-image {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 180px;
+  border: 2px solid #000;
+  background: #fff;
+  padding: 4px;
+  z-index: 1000;
+}
+
+.proj-team-hover-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.proj-team-name .heading {
+  font-size: 50px;
 }
 
 @media (max-width: 480px) {
