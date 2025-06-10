@@ -29,7 +29,12 @@
                 <a href="#" class="nav-link">Home</a>
               </li>
               <li class="nav-list-item">
-                <a href="#" class="nav-link">Water Stories</a>
+                <a
+                  href="https://waterstories.watersimmersive.net/"
+                  target="_blank"
+                  class="nav-link"
+                  >Water Stories</a
+                >
               </li>
               <li class="nav-list-item">
                 <a href="#" class="nav-link">Games and Experiences</a>
@@ -111,7 +116,9 @@
     <section class="water-stories">
       <div class="water-content">
         <div class="text-box">
-          <h2>Water Stories</h2>
+          <div>
+            <img src="water-stories-heading.svg" />
+          </div>
           <h3>LOREP IPSUM LOREP IPSUM LOREP IPSUM QYQYQ</h3>
           <p>
             The overall purpose for the WaterSIMmersive project is to help
@@ -122,12 +129,17 @@
           </p>
         </div>
         <div class="drop-box">
-          <img
-            src="images/Water-Stories/water-stories-drop.png"
-            alt="Water Drop"
-            class="drop-icon"
-          />
-          <span class="drop-text">Dive in</span>
+          <button
+            class="drop-box-button"
+            onclick="window.open('https://waterstories.watersimmersive.net/', '_blank');"
+          >
+            <img
+              src="images/Water-Stories/water-stories-drop.png"
+              alt="Water Drop"
+              class="drop-icon"
+            />
+            <span class="drop-text">Dive in</span>
+          </button>
         </div>
       </div>
 
@@ -197,18 +209,19 @@
       <div class="pt-container">
         <div class="pt-heading">
           <h2>Project Timeline</h2>
-          <p>Small overview of project timeline</p>
+          <p id="pt-heading-overview">Small overview of project timeline</p>
 
           <!-- Tabs -->
-
-          <div class="pt-tabs">
-            <button class="pt-tab-button pt-active" data-tab="pt-year1">
-              Year 1
-            </button>
-            <button class="pt-tab-button" data-tab="pt-year2">Year 2</button>
-            <button class="pt-tab-button" data-tab="pt-year3">Year 3</button>
-            <button class="pt-tab-button" data-tab="pt-year4">Year 4</button>
-            <button class="pt-tab-button" data-tab="pt-year5">Year 5</button>
+          <div class="pt-tabs-parent">
+            <div class="pt-tabs">
+              <button class="pt-tab-button pt-active" data-tab="pt-year1">
+                Year 1
+              </button>
+              <button class="pt-tab-button" data-tab="pt-year2">Year 2</button>
+              <button class="pt-tab-button" data-tab="pt-year3">Year 3</button>
+              <button class="pt-tab-button" data-tab="pt-year4">Year 4</button>
+              <button class="pt-tab-button" data-tab="pt-year5">Year 5</button>
+            </div>
           </div>
 
           <!-- Year 1 Content -->
@@ -438,68 +451,43 @@
     </section>
 
     <section class="events maxwidth-contain">
-      <h2>Upcoming Events</h2>
       <div class="content">
         <div class="events-left">
-          <div class="events-grid-item">
-            <img src="images/events/event1.png" alt="Event1 Image" />
-            <p class="events-grid-item_title">
-              Beer and Birds Festival at the Audubon Central in South Phoneix
-            </p>
-            <div class="events-grid-item_date">
-              <div class="timer-icon"></div>
-              <p>12th February | 3:00PM - 4:30PM</p>
+          <h2>Upcoming Events</h2>
+          <div class="events-left-content">
+            <div class="events-grid-item">
+              <img src="images/events/event1.png" alt="Event1 Image" />
+              <p class="events-grid-item_title">
+                Beer and Birds Festival at the Audubon Central in South Phoneix
+              </p>
+              <div class="events-grid-item_date">
+                <div class="timer-icon"></div>
+                <p>12th February | 3:00PM - 4:30PM</p>
+              </div>
+              <div class="events-grid-item_location">
+                <div class="timer-icon"></div>
+                <p>Nina Mason Pulliam Rio Salado Audubon Center</p>
+              </div>
             </div>
-            <div class="events-grid-item_location">
-              <div class="timer-icon"></div>
-              <p>Nina Mason Pulliam Rio Salado Audubon Center</p>
-            </div>
-          </div>
-          <div class="events-grid-item">
-            <img src="images/events/event2.png" alt="Event1 Image" />
-            <!-- add a div wrapper for the contents and give it padding -->
-            <p class="events-grid-item_title">
-              Beer and Birds Festival at the Audubon Central in South Phoneix
-            </p>
-            <div class="events-grid-item_date">
-              <div class="timer-icon"></div>
-              <p>12th February | 3:00PM - 4:30PM</p>
-            </div>
-            <div class="events-grid-item_location">
-              <div class="timer-icon"></div>
-              <p>Nina Mason Pulliam Rio Salado Audubon Center</p>
-            </div>
-          </div>
-          <div class="events-grid-item">
-            <img src="images/events/event3.png" alt="Event1 Image" />
-            <p class="events-grid-item_title">
-              Beer and Birds Festival at the Audubon Central in South Phoneix
-            </p>
-            <div class="events-grid-item_date">
-              <div class="timer-icon"></div>
-              <p>12th February | 3:00PM - 4:30PM</p>
-            </div>
-            <div class="events-grid-item_location">
-              <div class="timer-icon"></div>
-              <p>Nina Mason Pulliam Rio Salado Audubon Center</p>
-            </div>
-          </div>
-          <div class="events-grid-item">
-            <img src="images/events/event4.png" alt="Event1 Image" />
-            <p class="events-grid-item_title">
-              Beer and Birds Festival at the Audubon Central in South Phoneix
-            </p>
-            <div class="events-grid-item_date">
-              <div class="timer-icon"></div>
-              <p>12th February | 3:00PM - 4:30PM</p>
-            </div>
-            <div class="events-grid-item_location">
-              <div class="timer-icon"></div>
-              <p>Nina Mason Pulliam Rio Salado Audubon Center</p>
+            <div class="events-grid-item">
+              <img src="images/events/event2.png" alt="Event1 Image" />
+              <!-- add a div wrapper for the contents and give it padding -->
+              <p class="events-grid-item_title">
+                Beer and Birds Festival at the Audubon Central in South Phoneix
+              </p>
+              <div class="events-grid-item_date">
+                <div class="timer-icon"></div>
+                <p>12th February | 3:00PM - 4:30PM</p>
+              </div>
+              <div class="events-grid-item_location">
+                <div class="timer-icon"></div>
+                <p>Nina Mason Pulliam Rio Salado Audubon Center</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <button>Explore Events</button>
     </section>
 
     <h2 class="lr-main-heading">Learning Resources</h2>
@@ -511,11 +499,12 @@
         />
         <div class="lr-footer">
           <span class="lr-paragraph">
-            <div class="lr-subheading">
-              <h6>Fundamentals of storytelling</h6>
-            </div>
-            <a class="lr-link" href="#">Explore the blog</a>
+            <div class="lr-subheading-row"></div>
           </span>
+        </div>
+        <div class="lr-subheading">
+          <h6>Fundamentals of storytelling</h6>
+          <a class="lr-link" href="#">Explore the blog</a>
         </div>
       </div>
 
@@ -606,7 +595,7 @@
     </section>
 
     <section class="proj-team-container">
-      <h1 class="proj-team-title">Project Team</h1>
+      <h2 class="proj-team-title">Project Team</h2>
 
       <div class="proj-team-heading heading">
         <span class="proj-team-name heading">Name</span>
@@ -653,7 +642,7 @@
         <input type="text" id="name" placeholder="Your Name" required />
         <input type="email" id="email" placeholder="Your Email" required />
         <input type="text" id="message" placeholder="Message" required />
-        <button type="submit">Send Message →</button>
+        <button type="submit">Send Message ↗</button>
       </form>
 
       <hr />
