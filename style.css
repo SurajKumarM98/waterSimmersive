@@ -1115,95 +1115,6 @@ h2 {
   justify-content: space-between;
 }
 
-.contact-section {
-  font-family: sans-serif;
-  padding: 40px;
-  background: #f9f9f9;
-  color: #333;
-}
-
-.contact-section h2 {
-  color: #00aaff;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-#contactForm {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-#contactForm input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  flex: 1;
-  min-width: 200px;
-}
-
-#contactForm button {
-  background: #00aaff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-hr {
-  margin: 40px 0;
-  border-color: #28a7df;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  gap: 60px;
-}
-
-.logos img {
-  height: 70px;
-  margin-right: 40px;
-}
-
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
-}
-
-.links div {
-  min-width: 150px;
-}
-
-.links strong {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.links p {
-  margin: 5px 0;
-  font-size: 20px;
-}
-
-.contact-section .copyright {
-  margin-top: 40px;
-  font-size: 23px;
-  text-align: end;
-}
-
-.links a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.links a:hover {
-  text-decoration: underline;
-}
-
 /* Add media queries for responsiveness */
 @media (max-width: 768px) {
   .container {
@@ -1367,4 +1278,93 @@ hr {
   .dive-in-btn {
     font-size: 16px;
   }
+}
+
+.contact-section {
+  font-family: sans-serif;
+  padding: 40px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.contact-section h2 {
+  color: #00aaff;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#contactForm {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#contactForm input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 200px;
+}
+
+#contactForm button {
+  background: #00aaff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+hr {
+  margin: 40px 0;
+  border-color: #28a7df;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.logos img {
+  height: 70px;
+  margin-right: 40px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.links div {
+  min-width: 150px;
+}
+
+.links strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.links p {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.contact-section .copyright {
+  margin-top: 40px;
+  font-size: 23px;
+  text-align: end;
+}
+
+.links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
 }
