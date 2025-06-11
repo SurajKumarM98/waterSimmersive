@@ -1,6 +1,6 @@
 const mainHead = document.querySelector(".main-head");
 const navLinks = document.querySelectorAll(".nav-link");
-const video = document.querySelector(".showcase");
+const video = document.querySelector(".background-video");
 /*const hamburger = document.querySelector('.hamburger');*/
 const mainMenu = document.querySelector(".main-menu");
 

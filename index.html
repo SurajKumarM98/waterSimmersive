@@ -55,13 +55,16 @@
     </header>
 
     <section class="showcase">
-      <img src="Homepage.png" alt="" />
+      <video autoplay loop muted class="background-video">
+        <source src="homepage.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div class="overlay"></div>
       <div class="container">
         <div class="content">
           <h2>WaterSIMmersive</h2>
           <p>
-            Designing and assessing a mixed-reality water sustainability
+            Designing and assessing a mixed-reality water sustainability <br />
             educational game and museum exhibit for communities in Arizona
           </p>
         </div>
@@ -147,46 +150,88 @@
         <img src="images/WaterStories.png" alt="Collage" class="collage-img" />
       </div>
 
-      <div class="explore-link">
+      <!-- <div class="explore-link">
         <a href="#">Explore More <span>↗</span></a>
-      </div>
+      </div> -->
     </section>
 
     <section class="games-experience maxwidth-contain">
       <h2>Games & Experiences</h2>
       <div class="games-grid">
         <div class="games-card">
-          <img
-            src="images/gamesExperience/waterChatbot.png"
-            alt="Overview Image"
-          />
+          <button
+            class="drop-box-button"
+            onclick="window.open('https://azwaterbot.org', '_blank');"
+          >
+            <img
+              src="images/gamesExperience/waterChatbot.png"
+              alt="Overview Image"
+            />
+          </button>
           <div class="games-card_content">
             <p>Water Chatbot</p>
             <p>December, 2025</p>
+          </div>
+          <div class="games-card_content-p">
+            <p>
+              The overall purpose for the WaterSIMmersive project is to help
+              community members from diverse areas and backgrounds, many of whom
+              have been historically under-represented in key discussions,
+              better understand their water systems; this includes understanding
+              where their water comes from, how it is
+            </p>
           </div>
         </div>
         <div class="dummy"></div>
         <div class="dummy"></div>
 
         <div class="games-card">
-          <img
-            src="images/gamesExperience/mythOrFact.png"
-            alt="Overview Image"
-          />
+          <button
+            class="drop-box-button"
+            onclick="window.open('https://azwaterbot.org', '_blank');"
+          >
+            <img
+              src="images/gamesExperience/mythOrFact.png"
+              alt="Overview Image"
+            />
+          </button>
           <div class="games-card_content">
-            <p>Water Chatbot</p>
+            <p>The Myth or Fact Game</p>
             <p>December, 2025</p>
+          </div>
+          <div class="games-card_content-p">
+            <p>
+              The overall purpose for the WaterSIMmersive project is to help
+              community members from diverse areas and backgrounds, many of whom
+              have been historically under-represented in key discussions,
+              better understand their water systems; this includes understanding
+              where their water comes from, how it is
+            </p>
           </div>
         </div>
 
         <div class="games-card">
-          <img
-            src="images/gamesExperience/MixedReality.png"
-            alt="Overview Image"
-          />
+          <button
+            class="drop-box-button"
+            onclick="window.open('https://azwaterbot.org', '_blank');"
+          >
+            <img
+              src="images/gamesExperience/MixedReality.png"
+              alt="Overview Image"
+            />
+          </button>
           <div class="games-card_content">
-            <p>Water Chatbot</p>
-            <p>December, 2025</p>
+            <p>"Being Water" Mixed Reality</p>
+            <p>June, 2025</p>
+          </div>
+          <div class="games-card_content-p">
+            <p>
+              The overall purpose for the WaterSIMmersive project is to help
+              community members from diverse areas and backgrounds, many of whom
+              have been historically under-represented in key discussions,
+              better understand their water systems; this includes understanding
+              where their water comes from, how it is
+            </p>
           </div>
         </div>
         <div class="dummy"></div>
@@ -198,8 +243,11 @@
             alt="Overview Image"
           />
           <div class="games-card_content">
-            <p>Water Chatbot</p>
-            <p>December, 2025</p>
+            <p>Arizona Water Timeline</p>
+            <p>Summer, 2025</p>
+          </div>
+          <div class="games-card_content-p">
+            <p>Coming Soon</p>
           </div>
         </div>
       </div>
@@ -220,7 +268,7 @@
               <button class="pt-tab-button" data-tab="pt-year2">Year 2</button>
               <button class="pt-tab-button" data-tab="pt-year3">Year 3</button>
               <button class="pt-tab-button" data-tab="pt-year4">Year 4</button>
-              <button class="pt-tab-button" data-tab="pt-year5">Year 5</button>
+              <!-- <button class="pt-tab-button" data-tab="pt-year5">Year 5</button> -->
             </div>
           </div>
 
@@ -237,8 +285,8 @@
 
               <!-- Text Column -->
               <div class="pt-content">
-                <h6>Year 1</h6>
-                <h3>Title #1</h3>
+                <!-- <h6>Year 1</h6> -->
+                <h3>Year 1</h3>
                 <p>
                   ASU's grant team is working with rural and tribal communities
                   to collect water stories and evaluate exhibits using a
@@ -274,25 +322,29 @@
 
               <!-- Text Column -->
               <div class="pt-content">
-                <h6>Year 2</h6>
-                <h3>Title #1</h3>
+                <!-- <h6>Year 2</h6> -->
+                <h3>Year 2</h3>
                 <p>
-                  ASU's grant team is working with rural and tribal communities
-                  to collect water stories and evaluate exhibits using a
-                  transactional UX design process: Empathize, Define, Ideate,
-                  Prototype, and Test. In the Empathize stage, rural and
-                  American Indian students will collect 15–20 stories per site,
-                  guided by Drs. Hale and Lauer, with participants receiving $50
-                  Amazon gift cards. Stories will be stored using TheirStory
-                  software, managed by Labriola. Game development will draw from
-                  the We Are Water project and water perception surveys,
-                  including the Walton Water and Climate Survey (2020), the
-                  American Public Media Water Main Survey (2018), and White et
-                  al. (2019). The Define stage will involve coding data and
-                  creating visitor personas, with an interface designer and
-                  programmer hired for game development. The Ideate phase will
-                  focus on brainstorming game flow, scripts, and exhibit content
-                  for the museum exhibit in Page, AZ.
+                  The Prototype stage will begin year two and involve sketching,
+                  wireframing, and prototyping gameplay. We will Test basic
+                  usability issues of the prototypes in a lab environment and at
+                  sites around ASU (e.g. ASU's Night of the Open Door, which
+                  invites community members to visit ASU campuses and learn
+                  about the projects being developed there), and will continue
+                  to improve the designs before deploying the game to our first
+                  major host site, the Arizona Science Center, in the latter
+                  half of the year. We will continue to iterate on the design,
+                  content, and flow of the surrounding exhibit panels. Dr. Lauer
+                  will run experiments on data visualization comprehension to
+                  refine the style and delivery of visualized data in both the
+                  game and exhibit. We will begin pilot testing at the exhibit
+                  we set up at the Arizona Science Center and will finalize and
+                  polish up the WaterSIMmersive game for expanded deployment in
+                  year three. We will develop a project website to showcase
+                  collected stories and other drought-related content. We will
+                  work with host tribal and rural communities to develop
+                  programming and supplementary material to accompany exhibit
+                  deployment.
                 </p>
               </div>
             </div>
@@ -311,25 +363,22 @@
 
               <!-- Text Column -->
               <div class="pt-content">
-                <h6>Year 3</h6>
-                <h3>Title #1</h3>
+                <!-- <h6>Year 3</h6> -->
+                <h3>Year 3</h3>
                 <p>
-                  ASU's grant team is working with rural and tribal communities
-                  to collect water stories and evaluate exhibits using a
-                  transactional UX design process: Empathize, Define, Ideate,
-                  Prototype, and Test. In the Empathize stage, rural and
-                  American Indian students will collect 15–20 stories per site,
-                  guided by Drs. Hale and Lauer, with participants receiving $50
-                  Amazon gift cards. Stories will be stored using TheirStory
-                  software, managed by Labriola. Game development will draw from
-                  the We Are Water project and water perception surveys,
-                  including the Walton Water and Climate Survey (2020), the
-                  American Public Media Water Main Survey (2018), and White et
-                  al. (2019). The Define stage will involve coding data and
-                  creating visitor personas, with an interface designer and
-                  programmer hired for game development. The Ideate phase will
-                  focus on brainstorming game flow, scripts, and exhibit content
-                  for the museum exhibit in Page, AZ.
+                  In year three we will deploy exhibits to a pair of sites in
+                  the East region of Arizona for one four-month span (Bullion
+                  Cultural Center and Museum in Miami-Globe and the Fort Apache
+                  Heritage Museum on the White Mountain Apache Reservation)
+                  followed by a second pair of sites in the West region of
+                  Arizona for another four-month span (Lake Havasu History
+                  Museum and the Colorado River Tribal Museum). We will travel
+                  to the communities to open and close the exhibits and
+                  facilitate community programming and museum-based research. We
+                  will run quasi-experimental pilot studies. Iterative
+                  development of K-20 supplemental educational materials will be
+                  informed by a half-day workshop we host with teachers from
+                  rural and tribal communities.
                 </p>
               </div>
             </div>
@@ -348,25 +397,21 @@
 
               <!-- Text Column -->
               <div class="pt-content">
-                <h6>Year 4</h6>
-                <h3>Title #1</h3>
+                <!-- <h6>Year 4</h6> -->
+                <h3>Year 4</h3>
                 <p>
-                  ASU's grant team is working with rural and tribal communities
-                  to collect water stories and evaluate exhibits using a
-                  transactional UX design process: Empathize, Define, Ideate,
-                  Prototype, and Test. In the Empathize stage, rural and
-                  American Indian students will collect 15–20 stories per site,
-                  guided by Drs. Hale and Lauer, with participants receiving $50
-                  Amazon gift cards. Stories will be stored using TheirStory
-                  software, managed by Labriola. Game development will draw from
-                  the We Are Water project and water perception surveys,
-                  including the Walton Water and Climate Survey (2020), the
-                  American Public Media Water Main Survey (2018), and White et
-                  al. (2019). The Define stage will involve coding data and
-                  creating visitor personas, with an interface designer and
-                  programmer hired for game development. The Ideate phase will
-                  focus on brainstorming game flow, scripts, and exhibit content
-                  for the museum exhibit in Page, AZ.
+                  In year four we will follow the same process and deploy
+                  exhibits to a pair of sites in the North region of Arizona for
+                  one four-month span (Page Library and Navajo Nation location)
+                  followed by a second pair of sites in the South region of
+                  Arizona (Bisbee and Tohono O'Odham Cultural Center & Museum).
+                  We will run quasi-experimental pilot studies as well as send
+                  out long-term follow-up assessments. Iterative development of
+                  K-20 supplemental educational materials will continue during a
+                  second half-day workshop we host with teachers from rural and
+                  tribal communities We will disseminate research and
+                  development findings to conferences, journals, and informal
+                  science centers and community venues.
                 </p>
               </div>
             </div>
@@ -384,7 +429,7 @@
               </div>
 
               <!-- Text Column -->
-              <div class="pt-content">
+              <!-- <div class="pt-content">
                 <h6>Year 5</h6>
                 <h3>Title #1</h3>
                 <p>
@@ -405,7 +450,7 @@
                   focus on brainstorming game flow, scripts, and exhibit content
                   for the museum exhibit in Page, AZ.
                 </p>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -695,8 +740,6 @@
       </div>
       <p class="copyright">©2025 WaterSimmersive. All rights reserved</p>
     </section>
-
-    <section class="Margin-Bottom"></section>
 
     <script src="./app.js"></script>
   </body>

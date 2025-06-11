@@ -11,7 +11,7 @@
   width: 100%;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
@@ -113,7 +113,7 @@
   z-index: 0;
 }
 
-/* .background-video {
+.background-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -121,31 +121,31 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-} */
+}
 
-.showcase img {
-  /* The image used */
+/* .showcase img {
+  The image used
   background-image: url("img_girl.jpg");
 
-  /* Full height */
+  Full height
   height: 100%;
 
-  /* Center and scale the image nicely */
+  Center and scale the image nicely
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .showcase .content {
   /*padding: 0 100px;*/
   color: #fff;
   text-align: left;
   z-index: 1;
-  text-align: center;
+  text-align: left;
 }
 
 .showcase .container h2 {
-  font-size: 45px;
+  font-size: 80px;
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   line-height: 55px;
@@ -155,7 +155,7 @@
 }
 
 .showcase .content p {
-  font-size: 16px;
+  font-size: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 24px;
@@ -302,6 +302,7 @@
   line-height: 100%;
   /* identical to box height, or 46px */
   color: #192023;
+  margin-top: 50px;
 }
 
 .pt-content p {
@@ -1206,10 +1207,19 @@ h2 {
   width: 100%;
   height: 100%;
   background: black;
+  cursor: pointer;
 }
 .games-experience .games-card .games-card_content {
   display: flex;
   justify-content: space-between;
+  font-size: 32px;
+  font-family: Literata;
+}
+
+.games-experience .games-card .games-card_content-p {
+  font-family: Poppins;
+  font-size: 22px;
+  text-align: justify;
 }
 
 /* Add media queries for responsiveness */
