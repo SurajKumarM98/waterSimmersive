@@ -1083,19 +1083,17 @@ h2 {
   margin: 0;
 }
 
+.pub-heading-out h2 {
+  padding-left: 40px;
+  margin-bottom: 50px;
+}
+
 .publication {
   display: flex;
   justify-content: center;
   position: relative;
   gap: 20px;
 }
-/* .publication .card {
-  width: 280px;
-  height: 450px;
-  margin: 10px;
-  border-radius: 15px;
-  box-shadow: 5px 5px #777;
-} */
 
 .publication .card {
   position: relative;
@@ -1122,18 +1120,38 @@ h2 {
 .publication .card h6 {
   font-family: Literata;
   font-size: 20px;
-  text-align: justify;
+  text-align: start;
   padding: 10px;
   flex-grow: 1;
+  margin: 0;
 }
 
-.publication .card a {
+.publication .card h6 a.title-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease;
+}
+
+.publication .card h6 a.title-link:hover {
+  border-bottom: 1px solid #333; /* Thinner underline on hover */
+}
+
+.publication .card a.download-link {
   color: #28a7df;
   padding: 15px 20px;
   position: absolute;
   bottom: 0;
   left: 0;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease;
+}
+
+.publication .card a.download-link:hover {
+  border-bottom: 1px solid #28a7df;
+  cursor: pointer;
 }
 
 .Margin-Bottom {
@@ -1160,6 +1178,7 @@ h2 {
   grid-template-columns: 1fr 1fr;
   column-gap: 48px; /* gap between image and text */
   padding-top: 56px;
+  padding-bottom: 100px;
 }
 .first-overview img {
   width: 80%;
@@ -1190,7 +1209,7 @@ h2 {
 
 .games-experience h2 {
   margin-left: 0px;
-  margin-bottom: 24px;
+  margin-bottom: 50px;
 }
 .games-experience .games-grid {
   display: grid;
