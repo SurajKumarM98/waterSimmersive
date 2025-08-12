@@ -1196,15 +1196,7 @@ h2 {
 }
 
 .games-experience {
-  .hero-section {
-    background-image: url("images/Wave.png"); /* Replace with your image path */
-    background-size: cover; /* Makes the image cover the entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating the image */
-    padding: 100px 20px; /* Adds some padding for content */
-    color: white; /* Ensures text is readable on the image */
-    text-align: center;
-  }
+  padding-top: 100px;
 }
 
 .games-experience h2 {
@@ -1239,6 +1231,36 @@ h2 {
   font-family: Poppins;
   font-size: 22px;
   text-align: justify;
+}
+
+/* Mobile hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.hamburger-active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* Add media queries for responsiveness */
@@ -1304,87 +1326,266 @@ h2 {
   }
 }
 
-.proj-team-container {
-  font-family: Georgia, serif;
-  margin: 40px;
-  background: #fff;
-  position: relative;
-  padding-bottom: 160px;
-}
-
-.proj-team-row {
-  display: flex;
-  justify-content: space-between;
-  /* padding: 25px 0; */
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.3s;
-  margin-block: 50px;
-}
-
-.proj-team-heading {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 0;
-  margin-bottom: -30px;
-}
-
-.proj-team-heading .heading {
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: 50px;
-}
-
-.proj-team-name,
-.proj-team-role,
-.proj-team-position {
-  font-weight: bold;
-  font-size: 20px;
-  flex: 1;
-}
-
-.proj-team-role {
-  flex: 2;
-}
-
-.proj-team-underline {
-  border-bottom: 1px solid #000;
-}
-
-.proj-team-hover-image {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 180px;
-  /* border: 2px solid #000; */
-  background: #fff;
-  padding: 4px;
-  z-index: 1000;
-}
-
-.proj-team-hover-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.proj-team-name .heading {
-  font-size: 50px;
-}
-
-@media (max-width: 480px) {
-  .main-head .main-menu .logo {
-    font-size: 20px;
+/* Large tablets and small desktops */
+@media (max-width: 1024px) {
+  .main-head .main-menu .nav-menu .nav-list .nav-list-item {
+    padding: 10px 15px;
+    font-size: 16px;
   }
 
   .showcase .container h2 {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 60px;
+    line-height: 50px;
+    padding-left: 30px;
+  }
+
+  .showcase .content p {
+    font-size: 24px;
+    padding-left: 30px;
+  }
+
+  .first-overview {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .first-overview .text-content {
+    padding-left: 20px;
+    gap: 30px;
+  }
+
+  .first-overview img {
+    width: 100%;
+    justify-self: center;
+    padding-top: 20px;
+  }
+
+  .water-content {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .text-box {
+    flex: 1 1 100%;
+    padding-right: 0;
+  }
+
+  .drop-box {
+    flex: 1 1 100%;
+  }
+
+  .games-experience .games-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .pt-grid-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .pt-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pt-content h3 {
+    width: 100%;
+    font-size: 36px;
+  }
+
+  .pt-content p {
+    width: 100%;
+    font-size: 18px;
+    height: auto;
+  }
+
+  .events-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .events-section .text-content h2 {
+    margin-top: 50px;
+    font-size: 50px;
+  }
+
+  .text-content p {
+    font-size: 18px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .circle-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .circle-img.large {
+    width: 300px;
+    height: 300px;
+  }
+
+  .events .content {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .events .content .events-left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .events .content .events-left-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .lr-container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .lr-image-section {
+    flex: 1 1 100%;
+  }
+
+  .lr-image-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .lr-text-section {
+    flex: 1 1 100%;
+  }
+
+  .lr-heading {
+    font-size: 30px;
+  }
+
+  .lr-paragraph {
+    font-size: 18px;
+  }
+
+  .publication {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .publication .card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .proj-team-container {
+    margin: 20px;
+    padding-bottom: 100px;
+  }
+
+  .proj-team-row {
+    flex-direction: column;
+    gap: 10px;
+    margin-block: 30px;
+  }
+
+  .proj-team-heading {
+    display: none;
+  }
+
+  .proj-team-name,
+  .proj-team-role,
+  .proj-team-position {
+    font-size: 16px;
+  }
+
+  .contact-section {
+    padding: 20px;
+    padding-inline: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .links {
+    gap: 40px;
+  }
+
+  .logos img {
+    height: 50px;
+    margin-right: 20px;
+  }
+}
+
+/* Medium tablets */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .main-head .main-menu .nav-menu .nav-list {
+    position: fixed;
+    top: 66px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 66px);
+    background-color: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s;
+    z-index: 999;
+  }
+
+  .main-head .main-menu .nav-menu .nav-list.nav-active {
+    left: 0;
+  }
+
+  .main-head .main-menu .nav-menu .nav-list .nav-list-item {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .main-head .main-menu .nav-menu .nav-list .nav-list-item:last-child {
+    border-bottom: none;
+  }
+
+  .showcase .container h2 {
+    font-size: 40px;
+    line-height: 45px;
+    padding-left: 20px;
+  }
+
+  .showcase .content p {
+    font-size: 18px;
+    padding-left: 20px;
+  }
+
+  .scroll-down-btn {
+    width: 40px;
+    height: 40px;
+    bottom: 30px;
+  }
+
+  .scroll-down-text {
+    bottom: 10px;
+    font-size: 12px;
   }
 
   .overview .overview-content .content h2 {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 35px;
+    line-height: 35px;
   }
 
   .overview .overview-content .content h6 {
@@ -1397,99 +1598,423 @@ h2 {
     line-height: 20px;
   }
 
-  .dive-in-btn {
+  .water-stories {
+    padding: 20px 10px;
+  }
+
+  .text-box h3 {
+    font-size: 24px;
+  }
+
+  .text-box p {
+    font-size: 18px;
+  }
+
+  .games-experience {
+    padding-top: 50px;
+  }
+
+  .games-experience h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .games-experience .games-card .games-card_content {
+    font-size: 24px;
+  }
+
+  .games-experience .games-card .games-card_content-p {
     font-size: 16px;
+  }
+
+  .pt-tabs {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .pt-tab-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+  }
+
+  .pt-content h3 {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  .pt-content p {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+
+  .events-section .text-content h2 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+    padding-block-end: 30px;
+  }
+
+  .text-content button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .circle-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .circle-img.large {
+    width: 250px;
+    height: 250px;
+  }
+
+  .shift-down {
+    margin-top: 50px;
+  }
+
+  .events h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .lr-main-heading {
+    font-size: 50px;
+  }
+
+  .lr-heading {
+    font-size: 24px;
+  }
+
+  .lr-paragraph {
+    font-size: 16px;
+  }
+
+  .lr-subheading h6 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .pub-heading-out h2 {
+    padding-left: 20px;
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .proj-team-title {
+    font-size: 50px;
+  }
+
+  .proj-team-name,
+  .proj-team-role,
+  .proj-team-position {
+    font-size: 14px;
+  }
+
+  #contactForm {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #contactForm input {
+    min-width: auto;
+    font-size: 16px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .links div {
+    min-width: auto;
+  }
+
+  .links strong {
+    font-size: 18px;
+  }
+
+  .links p {
+    font-size: 16px;
+  }
+
+  .contact-section .copyright {
+    font-size: 18px;
   }
 }
 
-.contact-section {
-  font-family: sans-serif;
-  padding: 40px;
-  background: #f9f9f9;
-  color: #333;
-  padding-inline: 80px;
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .main-head .main-menu .logo {
+    font-size: 20px;
+  }
+
+  .main-head .main-menu .logo img {
+    max-width: 100px;
+  }
+
+  .showcase .container h2 {
+    font-size: 28px;
+    line-height: 38px;
+    padding-left: 15px;
+  }
+
+  .showcase .content p {
+    font-size: 16px;
+    padding-left: 15px;
+  }
+
+  .first-overview {
+    padding: 20px 15px;
+  }
+
+  .first-overview .text-content {
+    padding-left: 15px;
+    gap: 20px;
+  }
+
+  .overview .overview-content .content h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .overview .overview-content .content h6 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .overview .overview-content h3 {
+    font-size: 22px;
+    line-height: 18px;
+  }
+
+  .water-stories {
+    padding: 15px 10px;
+  }
+
+  .text-box h3 {
+    font-size: 20px;
+  }
+
+  .text-box p {
+    font-size: 16px;
+  }
+
+  .games-experience h2 {
+    font-size: 40px;
+  }
+
+  .games-experience .games-card .games-card_content {
+    font-size: 20px;
+  }
+
+  .games-experience .games-card .games-card_content-p {
+    font-size: 14px;
+  }
+
+  .pt-content h3 {
+    font-size: 24px;
+  }
+
+  .pt-content p {
+    font-size: 14px;
+  }
+
+  .events-section .text-content h2 {
+    font-size: 35px;
+  }
+
+  .text-content p {
+    font-size: 14px;
+  }
+
+  .circle-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle-img.large {
+    width: 200px;
+    height: 200px;
+  }
+
+  .events h2 {
+    font-size: 40px;
+  }
+
+  .lr-main-heading {
+    font-size: 40px;
+  }
+
+  .lr-heading {
+    font-size: 20px;
+  }
+
+  .lr-paragraph {
+    font-size: 14px;
+  }
+
+  .lr-subheading h6 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .pub-heading-out h2 {
+    font-size: 40px;
+  }
+
+  .proj-team-title {
+    font-size: 40px;
+  }
+
+  .proj-team-name,
+  .proj-team-role,
+  .proj-team-position {
+    font-size: 12px;
+  }
+
+  #contactForm input {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  #contactForm button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .links strong {
+    font-size: 16px;
+  }
+
+  .links p {
+    font-size: 14px;
+  }
+
+  .contact-section .copyright {
+    font-size: 16px;
+  }
+
+  .logos img {
+    height: 40px;
+    margin-right: 15px;
+  }
 }
 
-.contact-section h2 {
-  margin-bottom: 20px;
+/* Extra small devices */
+@media (max-width: 320px) {
+  .showcase .container h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .showcase .content p {
+    font-size: 14px;
+  }
+
+  .overview .overview-content .content h2 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .games-experience h2 {
+    font-size: 35px;
+  }
+
+  .events h2 {
+    font-size: 35px;
+  }
+
+  .lr-main-heading {
+    font-size: 35px;
+  }
+
+  .pub-heading-out h2 {
+    font-size: 35px;
+  }
+
+  .proj-team-title {
+    font-size: 35px;
+  }
+
+  .circle-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circle-img.large {
+    width: 160px;
+    height: 160px;
+  }
 }
 
-#contactForm {
-  display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+/* Landscape orientation adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+  .showcase {
+    height: 100vh;
+  }
+
+  .showcase .container h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .showcase .content p {
+    font-size: 16px;
+  }
+
+  .scroll-down-btn {
+    bottom: 20px;
+  }
+
+  .scroll-down-text {
+    bottom: 5px;
+  }
 }
 
-#contactForm input {
-  padding: 20px;
-  border: 1px solid #28a7df99;
-  border-radius: 10px;
-  flex: 1;
-  min-width: 200px;
-  font-size: 18px;
-  font-family: Poppins;
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
 }
 
-#contactForm button {
-  background: #00aaff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: Poppins;
-  font-size: 18px;
-}
+/* Print styles */
+@media print {
+  .main-head,
+  .scroll-down-btn,
+  .scroll-down-text {
+    display: none;
+  }
 
-hr {
-  margin: 40px 0;
-  border-color: #28a7df;
-}
+  .showcase {
+    height: auto;
+    min-height: 300px;
+  }
 
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  gap: 60px;
-}
+  .showcase .container h2 {
+    color: #000;
+  }
 
-.logos img {
-  height: 70px;
-  margin-right: 40px;
-}
+  .showcase .content p {
+    color: #000;
+  }
 
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
-}
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
 
-.links div {
-  min-width: 150px;
-}
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
 
-.links strong {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 22px;
-}
-
-.links p {
-  margin: 5px 0;
-  font-size: 20px;
-}
-
-.contact-section .copyright {
-  margin-top: 40px;
-  font-size: 23px;
-  text-align: end;
-}
-
-.links a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.links a:hover {
-  text-decoration: underline;
+  .games-card,
+  .publication .card {
+    page-break-inside: avoid;
+  }
 }

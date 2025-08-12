@@ -4,6 +4,46 @@ const video = document.querySelector(".background-video");
 /*const hamburger = document.querySelector('.hamburger');*/
 const mainMenu = document.querySelector(".main-menu");
 
+// Mobile navigation functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const navMenu = document.querySelector(".nav-menu");
+  const navList = document.querySelector(".nav-list");
+  
+  // Create hamburger menu button
+  const hamburger = document.createElement("div");
+  hamburger.className = "hamburger";
+  hamburger.innerHTML = `
+    <span></span>
+    <span></span>
+    <span></span>
+  `;
+  
+  // Insert hamburger before nav-menu
+  navMenu.insertBefore(hamburger, navList);
+  
+  // Toggle mobile menu
+  hamburger.addEventListener("click", function() {
+    navList.classList.toggle("nav-active");
+    hamburger.classList.toggle("hamburger-active");
+  });
+  
+  // Close mobile menu when clicking on a link
+  navLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      navList.classList.remove("nav-active");
+      hamburger.classList.remove("hamburger-active");
+    });
+  });
+  
+  // Close mobile menu when clicking outside
+  document.addEventListener("click", function(e) {
+    if (!navMenu.contains(e.target)) {
+      navList.classList.remove("nav-active");
+      hamburger.classList.remove("hamburger-active");
+    }
+  });
+});
+
 window.addEventListener("scroll", function () {
   const videoHeight = video.offsetHeight;
   if (this.scrollY > videoHeight) {

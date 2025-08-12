@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WaterSIMmersive</title>
+
+    <link rel="icon" href="svgs/favicon.svg" type="image/svg+xml" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -37,7 +39,7 @@
                 >
               </li>
               <li class="nav-list-item">
-                <a href="#" class="nav-link">Games and Experiences</a>
+                <a href="#gameExp" class="nav-link">Games and Experiences</a>
               </li>
               <li class="nav-list-item">
                 <a href="#" class="nav-link">Team</a>
@@ -56,7 +58,7 @@
 
     <section class="showcase">
       <video autoplay loop muted class="background-video">
-        <source src="homepage.mp4" type="video/mp4" />
+        <source src="images/Homepage.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div class="overlay"></div>
@@ -122,13 +124,11 @@
           <div>
             <img src="water-stories-heading.svg" />
           </div>
-          <h3>LOREP IPSUM LOREP IPSUM LOREP IPSUM QYQYQ</h3>
+          <h3>What part does water play in your life?</h3>
           <p>
-            The overall purpose for the WaterSIMmersive project is to help
-            community members from diverse areas and backgrounds, many of whom
-            have been historically under-represented in key discussions, better
-            understand their water systems; this includes understanding where
-            their water comes from.
+            Arizonans share their experiences at the WaterSIMmersive Exhibit, as
+            well as water memories and thoughts on water challenges in their
+            community.
           </p>
         </div>
         <div class="drop-box">
@@ -155,13 +155,13 @@
       </div> -->
     </section>
 
-    <section class="games-experience maxwidth-contain">
+    <section class="games-experience maxwidth-contain" id="gameExp">
       <h2>Games & Experiences</h2>
       <div class="games-grid">
         <div class="games-card">
           <button
             class="drop-box-button"
-            onclick="window.open('https://azwaterbot.org', '_blank');"
+            onclick="window.open('waterbot.html', '_blank');"
           >
             <img
               src="images/gamesExperience/waterChatbot.png"
@@ -170,15 +170,13 @@
           </button>
           <div class="games-card_content">
             <p>Water Chatbot</p>
-            <p>December, 2025</p>
           </div>
           <div class="games-card_content-p">
             <p>
-              The overall purpose for the WaterSIMmersive project is to help
-              community members from diverse areas and backgrounds, many of whom
-              have been historically under-represented in key discussions,
-              better understand their water systems; this includes understanding
-              where their water comes from, how it is
+              An interactive AI powered chatbot that answers real time questions
+              about water in Arizona. Designed to make water topics accessible
+              and engaging for all ages, this bot is trained on 400+ sources on
+              Arizona specific water info.
             </p>
           </div>
         </div>
@@ -197,15 +195,15 @@
           </button>
           <div class="games-card_content">
             <p>The Myth or Fact Game</p>
-            <p>December, 2025</p>
           </div>
           <div class="games-card_content-p">
             <p>
-              The overall purpose for the WaterSIMmersive project is to help
-              community members from diverse areas and backgrounds, many of whom
-              have been historically under-represented in key discussions,
-              better understand their water systems; this includes understanding
-              where their water comes from, how it is
+              A web based game that invites players to test their knowledge by
+              sorting water-related statements into “myth” or “fact.” A cute
+              water droplet character guides players through the game and
+              highlights water challenges and complexities specific to Arizona.
+              This game will be customized to reflect local concerns based on
+              the museum exhibit location where it appears.
             </p>
           </div>
         </div>
@@ -216,21 +214,22 @@
             onclick="window.open('https://watersimmersive.net/games-sims/build-a-facility-game/', '_blank');"
           >
             <img
-              src="images/gamesExperience/mythOrFact.png"
+              src="images/gamesExperience/mythOrFact3.png"
               alt="Overview Image"
             />
           </button>
           <div class="games-card_content">
             <p>Build a Facility Game</p>
-            <p>December, 2025</p>
           </div>
           <div class="games-card_content-p">
             <p>
-              The overall purpose for the WaterSIMmersive project is to help
-              community members from diverse areas and backgrounds, many of whom
-              have been historically under-represented in key discussions,
-              better understand their water systems; this includes understanding
-              where their water comes from, how it is
+              Water treatment plants provide clean, safe water for people to
+              use. To make water safe, collected water goes through a special
+              step-by-step cleaning process. Each station plays a unique role in
+              cleaning the water, and must be in the right order for the
+              facility to work properly. Water that goes into the treatment
+              plant can come from many different sources. Continue to learn
+              about the three most common water sources.
             </p>
           </div>
         </div>
@@ -244,21 +243,18 @@
             onclick="window.open('https://watersimmersive.net/games-sims/household-water-impacts-game/', '_blank');"
           >
             <img
-              src="images/gamesExperience/mythOrFact.png"
+              src="images/gamesExperience/mythOrFact2.png"
               alt="Overview Image"
             />
           </button>
           <div class="games-card_content">
             <p>Household Impacts Game</p>
-            <p>December, 2025</p>
           </div>
           <div class="games-card_content-p">
             <p>
-              The overall purpose for the WaterSIMmersive project is to help
-              community members from diverse areas and backgrounds, many of whom
-              have been historically under-represented in key discussions,
-              better understand their water systems; this includes understanding
-              where their water comes from, how it is
+              In the house above, you'll find ways to use less water and help
+              the planet. Your goal is to get the highest score by saving as
+              much water as possible.
             </p>
           </div>
         </div>
@@ -269,38 +265,61 @@
             onclick="window.open('https://watersimmersive.net/VR-360/WTP-Quick-Tour/', '_blank');"
           >
             <img
-              src="images/gamesExperience/MixedReality.png"
+              src="images/gamesExperience/AZTimeline.png"
               alt="Overview Image"
             />
           </button>
           <div class="games-card_content">
-            <p>"Being Water" Mixed Reality</p>
-            <p>June, 2025</p>
+            <p>Advanced Water Treatment Virtual Tours and Games</p>
           </div>
           <div class="games-card_content-p">
             <p>
-              The overall purpose for the WaterSIMmersive project is to help
-              community members from diverse areas and backgrounds, many of whom
-              have been historically under-represented in key discussions,
-              better understand their water systems; this includes understanding
-              where their water comes from, how it is
+              Explore three immersive journeys into the world of water treatment
+              and purification. The VR Museum Tour, a browser-based 360°
+              experience currently available when you click the image above,
+              highlights key areas of the treatment process with interactive
+              views and educational insights. You can also explore a full 360°
+              virtual tour of a real water treatment facility, featuring
+              advanced purification systems, lab testing areas, and real
+              equipment, available
+              <a
+                href="https://kazilek.com/Panos/WTP-Control-Room/"
+                target="_blank"
+                class="nav-link"
+                >here</a
+              >
+              . Coming soon to the Meta Store in Fall 2025, an action-packed
+              virtual reality headset experience lets you ride a nano-sub
+              through the pipes of an Advanced Water Purification (AWP) plant,
+              battling contaminants and learning how water is cleaned and tested
+              for safety.
             </p>
           </div>
         </div>
         <div class="dummy"></div>
 
         <div class="dummy"></div>
+
         <div class="games-card">
-          <img
-            src="images/gamesExperience/AZTimeline.png"
-            alt="Overview Image"
-          />
+          <button
+            class="drop-box-button"
+            onclick="window.open('being-water.html', '_blank');"
+          >
+            <img
+              src="images/gamesExperience/MixedReality.png"
+              alt="Overview Image"
+            />
+          </button>
           <div class="games-card_content">
-            <p>Arizona Water Timeline</p>
-            <p>Summer, 2025</p>
+            <p>"Being Water" Mixed Reality</p>
           </div>
           <div class="games-card_content-p">
-            <p>Coming Soon</p>
+            <p>
+              An interactive screen-based experience where participants become a
+              “water spirit” and travel through different water forms and uses
+              across Arizona, performing tasks and learning about the water
+              cycle and conservation.
+            </p>
           </div>
         </div>
       </div>
@@ -341,22 +360,13 @@
                 <!-- <h6>Year 1</h6> -->
                 <h3>Year 1</h3>
                 <p>
-                  ASU's grant team is working with rural and tribal communities
-                  to collect water stories and evaluate exhibits using a
-                  transactional UX design process: Empathize, Define, Ideate,
-                  Prototype, and Test. In the Empathize stage, rural and
-                  American Indian students will collect 15–20 stories per site,
-                  guided by Drs. Hale and Lauer, with participants receiving $50
-                  Amazon gift cards. Stories will be stored using TheirStory
-                  software, managed by Labriola. Game development will draw from
-                  the We Are Water project and water perception surveys,
-                  including the Walton Water and Climate Survey (2020), the
-                  American Public Media Water Main Survey (2018), and White et
-                  al. (2019). The Define stage will involve coding data and
-                  creating visitor personas, with an interface designer and
-                  programmer hired for game development. The Ideate phase will
-                  focus on brainstorming game flow, scripts, and exhibit content
-                  for the museum exhibit in Page, AZ.
+                  ASU's grant team is interviewing urban, rural and tribal
+                  residents to gather information about their concerns,
+                  questions, and ideas for the future using a transactional UX
+                  design process. We are working with members of those
+                  communities to develop localized museum exhibits about water
+                  and drought that speak to the concerns and contexts of each
+                  community.
                 </p>
               </div>
             </div>
@@ -378,26 +388,24 @@
                 <!-- <h6>Year 2</h6> -->
                 <h3>Year 2</h3>
                 <p>
-                  The Prototype stage will begin year two and involve sketching,
-                  wireframing, and prototyping gameplay. We will Test basic
+                  The Prototype stage will begin year two and involve sketching,
+                  wireframing, and designing gameplay. We will Test basic
                   usability issues of the prototypes in a lab environment and at
-                  sites around ASU (e.g. ASU's Night of the Open Door, which
-                  invites community members to visit ASU campuses and learn
-                  about the projects being developed there), and will continue
-                  to improve the designs before deploying the game to our first
-                  major host site, the Arizona Science Center, in the latter
-                  half of the year. We will continue to iterate on the design,
-                  content, and flow of the surrounding exhibit panels. Dr. Lauer
-                  will run experiments on data visualization comprehension to
-                  refine the style and delivery of visualized data in both the
-                  game and exhibit. We will begin pilot testing at the exhibit
-                  we set up at the Arizona Science Center and will finalize and
-                  polish up the WaterSIMmersive game for expanded deployment in
-                  year three. We will develop a project website to showcase
-                  collected stories and other drought-related content. We will
-                  work with host tribal and rural communities to develop
-                  programming and supplementary material to accompany exhibit
-                  deployment.
+                  events around ASU. We will continue to improve the designs
+                  before deploying the game to our first major host site, the
+                  Audubon Center at Rio Salado, in the latter half of the year.
+                  We will continue to iterate on the design, content, and flow
+                  of the surrounding exhibit. Dr. Lauer will run experiments on
+                  data visualization comprehension to refine the style and
+                  delivery of visualized data in both the game and exhibit. We
+                  will begin pilot testing at the exhibit we set up at the
+                  Arizona Science Center and will finalize and polish up the
+                  WaterSIMmersive game for expanded deployment in year three. We
+                  will develop a project website to showcase collected stories
+                  and other drought-related content. We will work with host
+                  tribal and rural communities to develop programming and
+                  supplementary material to accompany exhibit deployment to two
+                  site locations in the latter part of year two.
                 </p>
               </div>
             </div>
@@ -419,19 +427,16 @@
                 <!-- <h6>Year 3</h6> -->
                 <h3>Year 3</h3>
                 <p>
-                  In year three we will deploy exhibits to a pair of sites in
-                  the East region of Arizona for one four-month span (Bullion
-                  Cultural Center and Museum in Miami-Globe and the Fort Apache
-                  Heritage Museum on the White Mountain Apache Reservation)
-                  followed by a second pair of sites in the West region of
-                  Arizona for another four-month span (Lake Havasu History
-                  Museum and the Colorado River Tribal Museum). We will travel
-                  to the communities to open and close the exhibits and
+                  In year three we will deploy exhibits to sites in tribal and
+                  non tribal regions of Arizona; including the Fort Apache
+                  Heritage Museum on the White Mountain Apache Reservation and
+                  the Colorado Indian River Tribes Museum in Parker, AZ. We will
+                  travel to the communities to open and close the exhibits and
                   facilitate community programming and museum-based research. We
                   will run quasi-experimental pilot studies. Iterative
-                  development of K-20 supplemental educational materials will be
-                  informed by a half-day workshop we host with teachers from
-                  rural and tribal communities.
+                  development of supplemental educational materials will be
+                  informed by workshops we host with teachers from rural and
+                  tribal communities.
                 </p>
               </div>
             </div>
@@ -454,15 +459,13 @@
                 <h3>Year 4</h3>
                 <p>
                   In year four we will follow the same process and deploy
-                  exhibits to a pair of sites in the North region of Arizona for
-                  one four-month span (Page Library and Navajo Nation location)
-                  followed by a second pair of sites in the South region of
-                  Arizona (Bisbee and Tohono O'Odham Cultural Center & Museum).
-                  We will run quasi-experimental pilot studies as well as send
-                  out long-term follow-up assessments. Iterative development of
-                  K-20 supplemental educational materials will continue during a
-                  second half-day workshop we host with teachers from rural and
-                  tribal communities We will disseminate research and
+                  exhibits to more sites in the North and South regions of the
+                  state. Page Library and Tubac Presidio State Historic Park and
+                  Museum. We will run quasi-experimental pilot studies as well
+                  as send out long-term follow-up assessments. Iterative
+                  development of supplemental educational materials will
+                  continue during more workshops we host with teachers from
+                  rural and tribal communities We will disseminate research and
                   development findings to conferences, journals, and informal
                   science centers and community venues.
                 </p>
@@ -556,30 +559,29 @@
             <div class="events-grid-item">
               <img src="images/events/event1.png" alt="Event1 Image" />
               <p class="events-grid-item_title">
-                Beer and Birds Festival at the Audubon Central in South Phoneix
+                Black Canyon City, AZ Exhibit Install
               </p>
               <div class="events-grid-item_date">
                 <div class="timer-icon"></div>
-                <p>12th February | 3:00PM - 4:30PM</p>
+                <p>Fall 25</p>
               </div>
+
               <div class="events-grid-item_location">
                 <div class="timer-icon"></div>
-                <p>Nina Mason Pulliam Rio Salado Audubon Center</p>
+                <p>33955 Old Black Canyon Hwy, Black Canyon City, AZ 85324</p>
               </div>
             </div>
             <div class="events-grid-item">
               <img src="images/events/event2.png" alt="Event1 Image" />
               <!-- add a div wrapper for the contents and give it padding -->
-              <p class="events-grid-item_title">
-                Beer and Birds Festival at the Audubon Central in South Phoneix
-              </p>
+              <p class="events-grid-item_title">Bisbee, AZ Exhibit Install</p>
               <div class="events-grid-item_date">
                 <div class="timer-icon"></div>
-                <p>12th February | 3:00PM - 4:30PM</p>
+                <p>Fall 25</p>
               </div>
               <div class="events-grid-item_location">
                 <div class="timer-icon"></div>
-                <p>Nina Mason Pulliam Rio Salado Audubon Center</p>
+                <p>TBD</p>
               </div>
             </div>
           </div>
@@ -762,7 +764,7 @@
       </div>
 
       <div class="proj-team-row" data-img="images/claire-lauer.png">
-        <span class="proj-team-name">Michelle Hale</span>
+        <span class="proj-team-name">Liliana Caughman</span>
         <span class="proj-team-role">American Indian Studies</span>
         <span class="proj-team-position">CO-PI</span>
       </div>
