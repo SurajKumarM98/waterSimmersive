@@ -1975,6 +1975,104 @@ h2 {
   }
 }
 
+/* Additional responsive improvements */
+@media (max-width: 768px) {
+  /* Improve touch targets */
+  .nav-link {
+    padding: 15px 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .drop-box-button {
+    min-height: 44px;
+    padding: 10px;
+  }
+
+  .games-card img {
+    min-height: 200px;
+  }
+
+  /* Improve scrolling performance */
+  .showcase {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Better text readability */
+  .text-content p,
+  .lr-paragraph,
+  .pt-content p {
+    line-height: 1.6;
+    word-spacing: 0.5px;
+  }
+
+  /* Improve button interactions */
+  button {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  /* Better form inputs */
+  input, textarea {
+    -webkit-appearance: none;
+    border-radius: 8px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  /* Improve image loading */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Better spacing for mobile */
+  .maxwidth-contain {
+    padding-inline: 15px;
+  }
+
+  /* Improve video responsiveness */
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Prevent horizontal scroll on mobile */
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Stack elements vertically for better mobile layout */
+  .water-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-box,
+  .drop-box {
+    flex: 1 1 100%;
+  }
+
+  /* Improve mobile navigation */
+  .hamburger {
+    margin-right: 10px;
+  }
+
+  /* Better mobile typography */
+  h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+}
+
 /* High DPI displays */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .logo-image {

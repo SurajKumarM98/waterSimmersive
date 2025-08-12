@@ -417,6 +417,21 @@ hr {
   text-decoration: underline;
 }
 
+/* Button link styles */
+.button-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.button-link:hover {
+  text-decoration: none;
+}
+
+.button-link:visited {
+  text-decoration: none;
+}
+
 /* Mobile hamburger menu styles */
 .hamburger {
   display: none;

@@ -1,7 +1,6 @@
 const mainHead = document.querySelector(".main-head");
 const navLinks = document.querySelectorAll(".nav-link");
 const video = document.querySelector(".showcase");
-/*const hamburger = document.querySelector('.hamburger');*/
 const mainMenu = document.querySelector(".main-menu");
 
 // Mobile navigation functionality
@@ -58,3 +57,49 @@ window.addEventListener("scroll", function () {
     navLinks.forEach((link) => link.classList.remove("black-underline"));
   }
 });
+
+// Contact form functionality
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const airtableApiKey = "YOUR_API_KEY";
+    const baseId = "YOUR_BASE_ID";
+    const tableName = "YOUR_TABLE_NAME";
+
+    const url = `https://api.airtable.com/v0/${baseId}/${tableName}`;
+
+    const data = {
+      fields: {
+        Name: name,
+        Email: email,
+        Message: message,
+      },
+    };
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${airtableApiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        document.getElementById("contactForm").reset();
+      } else {
+        alert("Failed to send message.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Error sending data.");
+    }
+  }); 
